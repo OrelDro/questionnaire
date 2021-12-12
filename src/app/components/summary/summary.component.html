@@ -1,0 +1,6 @@
+<div class="summary">
+  <span>Summary:</span>
+  <span>Correct Answers: {{numOfCorrectAnswers$ ? (numOfCorrectAnswers$ | ngrxPush) : 0}}</span>
+  <span>Wrong Answers: {{numOfWrongAnswers$ ? (numOfWrongAnswers$ | ngrxPush) : 0}}</span>
+  <button pButton type="button" class="p-button-raised p-button-rounded" (click)="clickResetHandler()">Try Again</button>
+</div>

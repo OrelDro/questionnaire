@@ -1,0 +1,33 @@
+.p-selectbutton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  .p-button {
+    flex: 1 0 45%;
+    min-width: 250px;
+    min-height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    &:not(.p-highlight):hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    }
+    &.p-highlight {
+      box-shadow: none;
+    }
+  }
+}
+
+html {
+  body {
+    .p-buttonset .p-button:not(:first-of-type):not(:last-of-type),
+    .p-buttonset .p-button:first-of-type,
+    .p-buttonset .p-button:not(:last-child) {
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      border-radius: 3px;
+    }
+  }
+}
+

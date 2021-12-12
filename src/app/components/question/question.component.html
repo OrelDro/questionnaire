@@ -1,0 +1,7 @@
+<div class="question">
+  <span>{{question}}</span>
+  <p-selectButton [options]="answers" [disabled]="isFinish" (onChange)="onSelectAnswer($event)"></p-selectButton>
+  <span>attempts: {{attempts + '/3'}}</span>
+  <button pButton type="button" class="p-button-raised p-button-rounded"
+          [disabled]="!chosenAnswer || isFinish" (click)="clickOkHandler()">Send</button>
+</div>

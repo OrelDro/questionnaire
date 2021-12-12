@@ -1,0 +1,11 @@
+.p-carousel {
+  &-items-content {
+    border: 1px solid var(--surface-d);
+    border-radius: 3px;
+  }
+  &-indicator {
+    :not(.p-highlight) {
+      pointer-events: none;
+    }
+  }
+}
