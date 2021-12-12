@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  padding: 30px;
+  height: 100%;
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        color: var(--primary-color);
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+    &__timer {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      &--red {
+        color: #e12d2d;
+      }
+      &--orange {
+        color: #ee9a2e;
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      p-carousel {
+        width: 100%;
+      }
+    }
+  }
+}

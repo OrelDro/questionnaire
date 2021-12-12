@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/styles/carousel";
+@import "assets/styles/select-button";
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  & {
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+  }
+}
